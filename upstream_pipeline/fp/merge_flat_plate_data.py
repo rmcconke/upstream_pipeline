@@ -3,57 +3,28 @@ import Ofpp
 import os
 import matplotlib.pyplot as plt
 from scipy.interpolate import griddata
-RANS_foam_folder = os.path.join(os.getenv('ML_FOAM_DATASET'),'komegasst','02-writeFields/flatplate/')
-RANS_numpy_folder = os.path.join(os.getenv('ML_NUMPY_DATASET'),'komegasst')
-DNS_orig_folder = os.path.join(os.getenv('ML_FLATPLATE_DATA'),'data')
-DNS_numpy_folder = os.path.join(os.getenv('ML_NUMPY_DATASET'),'DNS')
+import argparse
+from dataFoam.utilities.MLDatasetFromFoamCase import MLDatasetFromFoamCase
+from dataFoam.utilities.foamIO.readFoam import get_endtime
 
+parser = argparse.ArgumentParser()
+case_type = parser.add_argument("-case_type", "--case_type", help="case type, e.g. komega, komegasst, LES")
+args = parser.parse_args()
+
+RANS_case = MLDatasetFromFoamCase('','','',args.case_type,'','')
+
+
+RANS_foam_folder = os.path.join(os.getenv('ML_FOAM_DATASET'),args.case_type,'fp/writeFields/flatplate/')
+RANS_numpy_folder = os.path.join(os.getenv('ML_NUMPY_DATASET'),args.case_type)
+DNS_orig_folder = os.path.join(os.getenv('ML_FLATPLATE_DATA'),'data')
+DNS_numpy_folder = os.path.join(os.getenv('ML_NUMPY_DATASET'),'REF')
+
+endtime = str(get_endtime(RANS_foam_folder))
 nu = 1.388e-05
 U_infty = 69.4*0.99
 interp_method = 'linear'
-rans_field_list = ['k',
-                    'omega',
-                    'epsilon',
-                    'T_t_ke',
-                    'T_t_nut',
-                    'T_k',
-                    'U',
-                    'gradp',
-                    'gradk',
-                    'gradomega',
-                    'p',
-                    'DUDt',
-                    'wallDistance',
-                    'nut',
-                    'S',
-                    'Shat',
-                    'R',
-                    'Rhat',
-                    'Ao',
-                    'Ak',
-                    'Aohat',
-                    'Akhat',
-                    'gradU',
-                    'skewness',
-                    'C'
-                    ]
 
-def assemble_rans_field_list(rans_field_list):
-    for i in range(47):
-        rans_field_list.append(f'I1_{i+1}')
-        rans_field_list.append(f'I2_{i+1}')
-    for i in range(10):
-        rans_field_list.append(f'T{i+1}')
-    for i in range(9):
-        rans_field_list.append(f'q{i+1}')
-    for i in range(5):
-        rans_field_list.append(f'lambda{i+1}')
-    print('Assembled full foam field list: ')
-    print(rans_field_list)
-    return rans_field_list
-
-rans_field_list = assemble_rans_field_list(rans_field_list)
-
+rans_field_list = RANS_case.foam_field_list
 
 DNS_Re_theta_list = ['0670', '1000', '1410', '2000', '2540', '3030', '3270', '3630', '3970', '4060']
 
@@ -66,14 +37,14 @@ def get_ind_wall(Re_theta, Re_theta_match):
     return np.nanargmin(np.abs(Re_theta-Re_theta_match))
 
 def get_ind_volume(ind_wall, C, C_bottom, theta_i):
-    return np.where((abs(C[:,0] - C_bottom[ind_wall])<1E-5) & (abs(C[:,1])<3*theta_i))[0]
+    return np.where((abs(C[:,0] - C_bottom[ind_wall])<1E-5) & (abs(C[:,1])<5*theta_i))[0]
 
 # Loop 1: calculate RANS wall-normalized quantities
-C_bottom = Ofpp.parse_boundary_field(os.path.join(RANS_foam_folder,'39600','C'))[b'bottomWall'][b'value'][:,0]
-C = np.load(os.path.join(RANS_numpy_folder,'komegasst_flatplate_C.npy'))
-wss = Ofpp.parse_boundary_field(os.path.join(RANS_foam_folder,'39600','wallShearStress'))[b'bottomWall'][b'value'][:,0]
-RANS_U = np.load(os.path.join(RANS_numpy_folder,'komegasst_flatplate_U.npy'))
-RANS_k = np.load(os.path.join(RANS_numpy_folder,'komegasst_flatplate_k.npy'))
+C_bottom = Ofpp.parse_boundary_field(os.path.join(RANS_foam_folder,endtime,'C'))[b'bottomWall'][b'value'][:,0]
+C = np.load(os.path.join(RANS_numpy_folder,f'{args.case_type}_flatplate_C.npy'))
+wss = Ofpp.parse_boundary_field(os.path.join(RANS_foam_folder,endtime,'wallShearStress'))[b'bottomWall'][b'value'][:,0]
+RANS_U = np.load(os.path.join(RANS_numpy_folder,f'{args.case_type}_flatplate_U.npy'))
+RANS_k = np.load(os.path.join(RANS_numpy_folder,f'{args.case_type}_flatplate_k.npy'))
 RANS_y = C[:,1]
 RANS_U_plus = np.empty(RANS_U.shape)
 RANS_k_plus = np.empty(RANS_k.shape)
@@ -97,7 +68,7 @@ def interpolate(C_fine, field_fine, C_coarse, method=interp_method):
     interp_field = griddata(C_fine,
                             field_fine,
                             C_coarse,
-                            method=interp_method)
+                            method=method)
 
     if interp_method != 'nearest':
         ind_nan = np.argwhere(np.isnan(interp_field))
@@ -119,7 +90,17 @@ for i_wall, x_wall in enumerate(C_bottom):
     v_U_Uinf = v_U[:,0]/U_inf_i
     theta[i_wall] = np.sum((v_y[1:]-v_y[0:-1])*(v_U_Uinf[0:-1]*(1-v_U_Uinf[0:-1])+v_U_Uinf[1:]*(1-v_U_Uinf[1:]))/2)
     Re_theta[i_wall] = np.divide(U_inf_i*theta[i_wall],nu)
-    
+
+fig, ax = plt.subplots(1,1,figsize=(6,6))
+nasa_Retheta = np.genfromtxt(os.path.join(os.getenv('ML_FLATPLATE_DATA'),'nasa_retheta_variation_typical.dat'),skip_header=3)
+ax.plot(C_bottom,Re_theta,'b',label=f'{args.case_type}')
+ax.plot(nasa_Retheta[:,0],nasa_Retheta[:,1],'k',label=f'NASA $Re_\theta$')
+
+ax.set_xlabel('$x$')
+ax.set_ylabel('$Re_\theta$')
+ax.legend(loc='lower right')
+fig.savefig(os.path.join(RANS_numpy_folder,f'{args.case_type}_x_Retheta_flatplate.png'),dpi=300)
+
 for Re_theta_i in DNS_Re_theta_list:
     print(f'Case: {Re_theta_i}')
     ind_wall = get_ind_wall(Re_theta, float(Re_theta_i))
@@ -146,7 +127,15 @@ for Re_theta_i in DNS_Re_theta_list:
     DNS_gradU[:,0,0] = DNS_dUdx
     DNS_gradU[:,0,1] = DNS_dUdy
     DNS_gradU[:,1,1] = DNS_dVdy
-    
+
+    DNS_dTauxydy = lagrange_polynomial_derivative(DNS_y,DNS_tau[:,0,1])
+    DNS_dTauyydy = lagrange_polynomial_derivative(DNS_y,DNS_tau[:,1,1])
+    DNS_dTauzydy = lagrange_polynomial_derivative(DNS_y,DNS_tau[:,1,2])
+    DNS_divTau = np.zeros((len(DNS_data),3,3))
+    DNS_divTau[:,0] = DNS_dTauxydy
+    DNS_divTau[:,1] = DNS_dTauyydy
+    DNS_divTau[:,2] = DNS_dTauzydy
+
     # Interpolate to RANS first to avoid divide by zero (the remainder are all algebraic operations)
     print('Interpolating fields using method '+interp_method)
     C_coarse = C[ind_vol,1]
@@ -157,6 +146,7 @@ for Re_theta_i in DNS_Re_theta_list:
     DNS_U = interpolate(C_fine,DNS_U,C_coarse,method=interp_method)
     DNS_tau = interpolate(C_fine,DNS_tau,C_coarse,method=interp_method)
     DNS_gradU = interpolate(C_fine,DNS_gradU,C_coarse,method=interp_method)
+    DNS_divTau = interpolate(C_fine,DNS_divTau,C_coarse,method=interp_method)
 
     # Calculating extra DNS fields
     DNS_k = 0.5*np.trace(DNS_tau,axis1=1,axis2=2)
@@ -166,34 +156,36 @@ for Re_theta_i in DNS_Re_theta_list:
     DNS_R = 0.5*(DNS_gradU - np.transpose(DNS_gradU,(0,2,1)))
     C_save = np.column_stack((np.zeros(len(C_coarse)),C_coarse,np.zeros(len(C_coarse))))
     # Saving DNS fields
-    np.save(os.path.join(DNS_numpy_folder,f'DNS_fp_{Re_theta_i}_a.npy'), DNS_a)
-    np.save(os.path.join(DNS_numpy_folder,f'DNS_fp_{Re_theta_i}_b.npy'), DNS_b)
-    np.save(os.path.join(DNS_numpy_folder,f'DNS_fp_{Re_theta_i}_C.npy'), C_save)
-    np.save(os.path.join(DNS_numpy_folder,f'DNS_fp_{Re_theta_i}_gradU.npy'), DNS_gradU)
-    np.save(os.path.join(DNS_numpy_folder,f'DNS_fp_{Re_theta_i}_k.npy'), DNS_k)
-    np.save(os.path.join(DNS_numpy_folder,f'DNS_fp_{Re_theta_i}_R.npy'), DNS_R)
-    np.save(os.path.join(DNS_numpy_folder,f'DNS_fp_{Re_theta_i}_S.npy'), DNS_S)
-    np.save(os.path.join(DNS_numpy_folder,f'DNS_fp_{Re_theta_i}_TauDNS.npy'), DNS_tau)
-    np.save(os.path.join(DNS_numpy_folder,f'DNS_fp_{Re_theta_i}_U.npy'), DNS_U)
+    np.save(os.path.join(DNS_numpy_folder,f'REF_fp_{Re_theta_i}_a.npy'), DNS_a)
+    np.save(os.path.join(DNS_numpy_folder,f'REF_fp_{Re_theta_i}_b.npy'), DNS_b)
+    np.save(os.path.join(DNS_numpy_folder,f'REF_fp_{Re_theta_i}_C.npy'), C_save)
+    np.save(os.path.join(DNS_numpy_folder,f'REF_fp_{Re_theta_i}_gradU.npy'), DNS_gradU)
+    np.save(os.path.join(DNS_numpy_folder,f'REF_fp_{Re_theta_i}_divtau.npy'), DNS_divTau)
+
+    np.save(os.path.join(DNS_numpy_folder,f'REF_fp_{Re_theta_i}_k.npy'), DNS_k)
+    np.save(os.path.join(DNS_numpy_folder,f'REF_fp_{Re_theta_i}_R.npy'), DNS_R)
+    np.save(os.path.join(DNS_numpy_folder,f'REF_fp_{Re_theta_i}_S.npy'), DNS_S)
+    np.save(os.path.join(DNS_numpy_folder,f'REF_fp_{Re_theta_i}_tau.npy'), DNS_tau)
+    np.save(os.path.join(DNS_numpy_folder,f'REF_fp_{Re_theta_i}_U.npy'), DNS_U)
     
-    np.save(os.path.join(DNS_numpy_folder,f'DNS_fp_{Re_theta_i}_yplus.npy'), DNS_y_plus)
-    np.save(os.path.join(DNS_numpy_folder,f'DNS_fp_{Re_theta_i}_Uplus.npy'), DNS_U_plus)
-    np.save(os.path.join(DNS_numpy_folder,f'DNS_fp_{Re_theta_i}_tauplus.npy'), DNS_tau_plus)
+    np.save(os.path.join(DNS_numpy_folder,f'REF_fp_{Re_theta_i}_yplus.npy'), DNS_y_plus)
+    np.save(os.path.join(DNS_numpy_folder,f'REF_fp_{Re_theta_i}_Uplus.npy'), DNS_U_plus)
+    np.save(os.path.join(DNS_numpy_folder,f'REF_fp_{Re_theta_i}_tauplus.npy'), DNS_tau_plus)
 
     print('Saving RANS fields....')
     for rans_field in rans_field_list:
         print(rans_field)
-        field = np.load(os.path.join(RANS_numpy_folder,f'komegasst_flatplate_{rans_field}.npy'))[ind_vol]
-        np.save(os.path.join(RANS_numpy_folder,f'komegasst_fp_{Re_theta_i}_{rans_field}.npy'), field)
-    np.save(os.path.join(RANS_numpy_folder,f'komegasst_fp_{Re_theta_i}_C.npy'), C_save)
-    np.save(os.path.join(RANS_numpy_folder,f'komegasst_fp_{Re_theta_i}_yplus.npy'), RANS_y_plus[ind_vol])
-    np.save(os.path.join(RANS_numpy_folder,f'komegasst_fp_{Re_theta_i}_Uplus.npy'), RANS_U_plus[ind_vol])
-    np.save(os.path.join(RANS_numpy_folder,f'komegasst_fp_{Re_theta_i}_kplus.npy'), RANS_k_plus[ind_vol])
+        field = np.load(os.path.join(RANS_numpy_folder,f'{args.case_type}_flatplate_{rans_field}.npy'))[ind_vol]
+        np.save(os.path.join(RANS_numpy_folder,f'{args.case_type}_fp_{Re_theta_i}_{rans_field}.npy'), field)
+    np.save(os.path.join(RANS_numpy_folder,f'{args.case_type}_fp_{Re_theta_i}_C.npy'), C_save)
+    np.save(os.path.join(RANS_numpy_folder,f'{args.case_type}_fp_{Re_theta_i}_yplus.npy'), RANS_y_plus[ind_vol])
+    np.save(os.path.join(RANS_numpy_folder,f'{args.case_type}_fp_{Re_theta_i}_Uplus.npy'), RANS_U_plus[ind_vol])
+    np.save(os.path.join(RANS_numpy_folder,f'{args.case_type}_fp_{Re_theta_i}_kplus.npy'), RANS_k_plus[ind_vol])
     fig, ax = plt.subplots(1,1,figsize=(6,6))
-    ax.plot(DNS_y_plus,DNS_U_plus[:,0],'b',label='SST')
-    ax.plot(RANS_y_plus[ind_vol],RANS_U_plus[ind_vol][:,0],'r',label='DNS')
+    ax.plot(DNS_y_plus,DNS_U_plus[:,0],'b',label='DNS')
+    ax.plot(RANS_y_plus[ind_vol],RANS_U_plus[ind_vol][:,0],'r',label=f'{args.case_type}')
     ax.semilogx()
     ax.set_ylabel('$U^+$')
     ax.set_xlabel('log($y^+$)')
-    fig.savefig(os.path.join(RANS_numpy_folder,f'uplus_yplus_fp_{Re_theta_i}.png'),dpi=300)
+    fig.savefig(os.path.join(RANS_numpy_folder,f'{args.case_type}_uplus_yplus_fp_{Re_theta_i}.png'),dpi=300)
 

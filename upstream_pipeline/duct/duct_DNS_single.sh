@@ -1,1 +1,1 @@
-python3 -u ../generic/foam_to_numpy.py -case $1 -foam_parent_dir ${ML_FOAM_DATASET}/DNS/  -data_save_dir ${ML_NUMPY_DATASET}/DNS/ -case_type DNS -write_fields_application writeFields_DNS > ${PIPELINE_LOGS}/log.duct_foam_to_numpy_DNS_${1}
+python3 -u ../generic/foam_to_numpy.py -case $1 -foam_parent_dir ${ML_FOAM_DATASET}/DNS/squareDuct  -data_save_dir ${ML_NUMPY_DATASET}/REF/ -case_type DNS -dataset_prefix REF -write_fields_application writeFields_DNS > ${PIPELINE_LOGS}/log.duct_foam_to_numpy_DNS_${1}
