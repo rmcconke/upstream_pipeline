@@ -131,7 +131,7 @@ for Re_theta_i in DNS_Re_theta_list:
     DNS_dTauxydy = lagrange_polynomial_derivative(DNS_y,DNS_tau[:,0,1])
     DNS_dTauyydy = lagrange_polynomial_derivative(DNS_y,DNS_tau[:,1,1])
     DNS_dTauzydy = lagrange_polynomial_derivative(DNS_y,DNS_tau[:,1,2])
-    DNS_divTau = np.zeros((len(DNS_data),3,3))
+    DNS_divTau = np.zeros((len(DNS_data),3))
     DNS_divTau[:,0] = DNS_dTauxydy
     DNS_divTau[:,1] = DNS_dTauyydy
     DNS_divTau[:,2] = DNS_dTauzydy
