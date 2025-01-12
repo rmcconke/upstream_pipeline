@@ -61,4 +61,4 @@ if os.path.exists(foamdir):
 template = os.path.join(args.DNS_foam_dir,'squareDuct_template')
 os.system(f'cp -r {template} {foamdir}')
 writeFoam_U_DUCT(os.path.join(foamdir,'0/U'),MESH_U)
-writeFoam_TauDNS_DUCT(os.path.join(foamdir,'0/TauDNS'),MESH_TauDNS)
+writeFoam_TauDNS_DUCT(os.path.join(foamdir,'0/tau'),MESH_TauDNS)
