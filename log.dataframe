@@ -1,0 +1,2881 @@
+building dataframe
+[dataFoam] Assembling dataframe for cases: ['fp_1000', 'fp_1410', 'fp_2000', 'fp_2540', 'fp_3030', 'fp_3270', 'fp_3630', 'fp_3970', 'fp_4060', 'case_0p5', 'case_0p8', 'case_1p0', 'case_1p2', 'case_1p5', 'h20', 'h26', 'h31', 'h38', 'h42', 'convdiv12600', 'convdiv20580', 'cbfs13700', 'squareDuctAve_Re_1100', 'squareDuctAve_Re_1150', 'squareDuctAve_Re_1250', 'squareDuctAve_Re_1300', 'squareDuctAve_Re_1350', 'squareDuctAve_Re_1400', 'squareDuctAve_Re_1500', 'squareDuctAve_Re_1600', 'squareDuctAve_Re_1800', 'squareDuctAve_Re_2000', 'squareDuctAve_Re_2205', 'squareDuctAve_Re_2400', 'squareDuctAve_Re_2600', 'squareDuctAve_Re_2900', 'squareDuctAve_Re_3200', 'squareDuctAve_Re_3500'], outputting final csv file to /home/ryley/WDK/ML/kaggle_update/dataframe/kepsilonphitf.csv
+    Case: fp_1000
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            kplus
+            yplus
+    Case: fp_1410
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            kplus
+            yplus
+    Case: fp_2000
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            kplus
+            yplus
+    Case: fp_2540
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            kplus
+            yplus
+    Case: fp_3030
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            kplus
+            yplus
+    Case: fp_3270
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            kplus
+            yplus
+    Case: fp_3630
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            kplus
+            yplus
+    Case: fp_3970
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            kplus
+            yplus
+    Case: fp_4060
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            kplus
+            yplus
+    Case: case_0p5
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: case_0p8
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: case_1p0
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: case_1p2
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: case_1p5
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: h20
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: h26
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: h31
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: h38
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: h42
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: convdiv12600
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: convdiv20580
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: cbfs13700
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_1100
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_1150
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_1250
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_1300
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_1350
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_1400
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_1500
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_1600
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_1800
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_2000
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_2205
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_2400
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_2600
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_2900
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_3200
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_3500
+        kepsilonphitf
+            U
+            k
+            epsilon
+            phit
+            f
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradphit
+            gradf
+            gradnut
+            gradp
+            v2
+            gradv2
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+Final dataframe columns:
+Index(['kepsilonphitf_U_1', 'kepsilonphitf_U_2', 'kepsilonphitf_U_3',
+       'kepsilonphitf_k', 'kepsilonphitf_epsilon', 'kepsilonphitf_phit',
+       'kepsilonphitf_f', 'kepsilonphitf_nut', 'kepsilonphitf_p',
+       'kepsilonphitf_gradU_11', 'kepsilonphitf_gradU_12',
+       'kepsilonphitf_gradU_13', 'kepsilonphitf_gradU_21',
+       'kepsilonphitf_gradU_22', 'kepsilonphitf_gradU_23',
+       'kepsilonphitf_gradU_31', 'kepsilonphitf_gradU_32',
+       'kepsilonphitf_gradU_33', 'kepsilonphitf_gradk_1',
+       'kepsilonphitf_gradk_2', 'kepsilonphitf_gradk_3',
+       'kepsilonphitf_gradepsilon_1', 'kepsilonphitf_gradepsilon_2',
+       'kepsilonphitf_gradepsilon_3', 'kepsilonphitf_gradphit_1',
+       'kepsilonphitf_gradphit_2', 'kepsilonphitf_gradphit_3',
+       'kepsilonphitf_gradf_1', 'kepsilonphitf_gradf_2',
+       'kepsilonphitf_gradf_3', 'kepsilonphitf_gradnut_1',
+       'kepsilonphitf_gradnut_2', 'kepsilonphitf_gradnut_3',
+       'kepsilonphitf_gradp_1', 'kepsilonphitf_gradp_2',
+       'kepsilonphitf_gradp_3', 'kepsilonphitf_v2', 'kepsilonphitf_gradv2_1',
+       'kepsilonphitf_gradv2_2', 'kepsilonphitf_gradv2_3',
+       'kepsilonphitf_turbR_11', 'kepsilonphitf_turbR_12',
+       'kepsilonphitf_turbR_13', 'kepsilonphitf_turbR_21',
+       'kepsilonphitf_turbR_22', 'kepsilonphitf_turbR_23',
+       'kepsilonphitf_turbR_31', 'kepsilonphitf_turbR_32',
+       'kepsilonphitf_turbR_33', 'kepsilonphitf_divturbR_1',
+       'kepsilonphitf_divturbR_2', 'kepsilonphitf_divturbR_3',
+       'kepsilonphitf_DUDt_1', 'kepsilonphitf_DUDt_2', 'kepsilonphitf_DUDt_3',
+       'kepsilonphitf_wallDistance', 'kepsilonphitf_S_11',
+       'kepsilonphitf_S_12', 'kepsilonphitf_S_13', 'kepsilonphitf_S_22',
+       'kepsilonphitf_S_23', 'kepsilonphitf_S_33', 'kepsilonphitf_R_11',
+       'kepsilonphitf_R_12', 'kepsilonphitf_R_13', 'kepsilonphitf_R_21',
+       'kepsilonphitf_R_22', 'kepsilonphitf_R_23', 'kepsilonphitf_R_31',
+       'kepsilonphitf_R_32', 'kepsilonphitf_R_33', 'kepsilonphitf_skewness',
+       'kepsilonphitf_C_1', 'kepsilonphitf_C_2', 'kepsilonphitf_C_3',
+       'kepsilonphitf_Uplus_1', 'kepsilonphitf_Uplus_2',
+       'kepsilonphitf_Uplus_3', 'kepsilonphitf_kplus', 'kepsilonphitf_yplus',
+       'Case'],
+      dtype='object')
+Memory info for final dataframe: 
+Index                           7222496
+kepsilonphitf_U_1               3611248
+kepsilonphitf_U_2               3611248
+kepsilonphitf_U_3               3611248
+kepsilonphitf_k                 3611248
+kepsilonphitf_epsilon           3611248
+kepsilonphitf_phit              3611248
+kepsilonphitf_f                 3611248
+kepsilonphitf_nut               3611248
+kepsilonphitf_p                 3611248
+kepsilonphitf_gradU_11          3611248
+kepsilonphitf_gradU_12          3611248
+kepsilonphitf_gradU_13          3611248
+kepsilonphitf_gradU_21          3611248
+kepsilonphitf_gradU_22          3611248
+kepsilonphitf_gradU_23          3611248
+kepsilonphitf_gradU_31          3611248
+kepsilonphitf_gradU_32          3611248
+kepsilonphitf_gradU_33          3611248
+kepsilonphitf_gradk_1           3611248
+kepsilonphitf_gradk_2           3611248
+kepsilonphitf_gradk_3           3611248
+kepsilonphitf_gradepsilon_1     3611248
+kepsilonphitf_gradepsilon_2     3611248
+kepsilonphitf_gradepsilon_3     3611248
+kepsilonphitf_gradphit_1        3611248
+kepsilonphitf_gradphit_2        3611248
+kepsilonphitf_gradphit_3        3611248
+kepsilonphitf_gradf_1           3611248
+kepsilonphitf_gradf_2           3611248
+kepsilonphitf_gradf_3           3611248
+kepsilonphitf_gradnut_1         3611248
+kepsilonphitf_gradnut_2         3611248
+kepsilonphitf_gradnut_3         3611248
+kepsilonphitf_gradp_1           3611248
+kepsilonphitf_gradp_2           3611248
+kepsilonphitf_gradp_3           3611248
+kepsilonphitf_v2                3611248
+kepsilonphitf_gradv2_1          3611248
+kepsilonphitf_gradv2_2          3611248
+kepsilonphitf_gradv2_3          3611248
+kepsilonphitf_turbR_11          3611248
+kepsilonphitf_turbR_12          3611248
+kepsilonphitf_turbR_13          3611248
+kepsilonphitf_turbR_21          3611248
+kepsilonphitf_turbR_22          3611248
+kepsilonphitf_turbR_23          3611248
+kepsilonphitf_turbR_31          3611248
+kepsilonphitf_turbR_32          3611248
+kepsilonphitf_turbR_33          3611248
+kepsilonphitf_divturbR_1        3611248
+kepsilonphitf_divturbR_2        3611248
+kepsilonphitf_divturbR_3        3611248
+kepsilonphitf_DUDt_1            3611248
+kepsilonphitf_DUDt_2            3611248
+kepsilonphitf_DUDt_3            3611248
+kepsilonphitf_wallDistance      3611248
+kepsilonphitf_S_11              3611248
+kepsilonphitf_S_12              3611248
+kepsilonphitf_S_13              3611248
+kepsilonphitf_S_22              3611248
+kepsilonphitf_S_23              3611248
+kepsilonphitf_S_33              3611248
+kepsilonphitf_R_11              3611248
+kepsilonphitf_R_12              3611248
+kepsilonphitf_R_13              3611248
+kepsilonphitf_R_21              3611248
+kepsilonphitf_R_22              3611248
+kepsilonphitf_R_23              3611248
+kepsilonphitf_R_31              3611248
+kepsilonphitf_R_32              3611248
+kepsilonphitf_R_33              3611248
+kepsilonphitf_skewness          3611248
+kepsilonphitf_C_1               3611248
+kepsilonphitf_C_2               3611248
+kepsilonphitf_C_3               3611248
+kepsilonphitf_Uplus_1           3611248
+kepsilonphitf_Uplus_2           3611248
+kepsilonphitf_Uplus_3           3611248
+kepsilonphitf_kplus             3611248
+kepsilonphitf_yplus             3611248
+Case                           59962543
+kepsilonphitf_U_1                     float32
+kepsilonphitf_U_2                     float32
+kepsilonphitf_U_3                     float32
+kepsilonphitf_k                       float32
+kepsilonphitf_epsilon                 float32
+kepsilonphitf_phit                    float32
+kepsilonphitf_f                       float32
+kepsilonphitf_nut                     float32
+kepsilonphitf_p                       float32
+kepsilonphitf_gradU_11                float32
+kepsilonphitf_gradU_12                float32
+kepsilonphitf_gradU_13                float32
+kepsilonphitf_gradU_21                float32
+kepsilonphitf_gradU_22                float32
+kepsilonphitf_gradU_23                float32
+kepsilonphitf_gradU_31                float32
+kepsilonphitf_gradU_32                float32
+kepsilonphitf_gradU_33                float32
+kepsilonphitf_gradk_1                 float32
+kepsilonphitf_gradk_2                 float32
+kepsilonphitf_gradk_3                 float32
+kepsilonphitf_gradepsilon_1           float32
+kepsilonphitf_gradepsilon_2           float32
+kepsilonphitf_gradepsilon_3           float32
+kepsilonphitf_gradphit_1              float32
+kepsilonphitf_gradphit_2              float32
+kepsilonphitf_gradphit_3              float32
+kepsilonphitf_gradf_1                 float32
+kepsilonphitf_gradf_2                 float32
+kepsilonphitf_gradf_3                 float32
+kepsilonphitf_gradnut_1               float32
+kepsilonphitf_gradnut_2               float32
+kepsilonphitf_gradnut_3               float32
+kepsilonphitf_gradp_1                 float32
+kepsilonphitf_gradp_2                 float32
+kepsilonphitf_gradp_3                 float32
+kepsilonphitf_v2                      float32
+kepsilonphitf_gradv2_1                float32
+kepsilonphitf_gradv2_2                float32
+kepsilonphitf_gradv2_3                float32
+kepsilonphitf_turbR_11                float32
+kepsilonphitf_turbR_12                float32
+kepsilonphitf_turbR_13                float32
+kepsilonphitf_turbR_21                float32
+kepsilonphitf_turbR_22                float32
+kepsilonphitf_turbR_23                float32
+kepsilonphitf_turbR_31                float32
+kepsilonphitf_turbR_32                float32
+kepsilonphitf_turbR_33                float32
+kepsilonphitf_divturbR_1              float32
+kepsilonphitf_divturbR_2              float32
+kepsilonphitf_divturbR_3              float32
+kepsilonphitf_DUDt_1                  float32
+kepsilonphitf_DUDt_2                  float32
+kepsilonphitf_DUDt_3                  float32
+kepsilonphitf_wallDistance            float32
+kepsilonphitf_S_11                    float32
+kepsilonphitf_S_12                    float32
+kepsilonphitf_S_13                    float32
+kepsilonphitf_S_22                    float32
+kepsilonphitf_S_23                    float32
+kepsilonphitf_S_33                    float32
+kepsilonphitf_R_11                    float32
+kepsilonphitf_R_12                    float32
+kepsilonphitf_R_13                    float32
+kepsilonphitf_R_21                    float32
+kepsilonphitf_R_22                    float32
+kepsilonphitf_R_23                    float32
+kepsilonphitf_R_31                    float32
+kepsilonphitf_R_32                    float32
+kepsilonphitf_R_33                    float32
+kepsilonphitf_skewness                float32
+kepsilonphitf_C_1                     float32
+kepsilonphitf_C_2                     float32
+kepsilonphitf_C_3                     float32
+kepsilonphitf_Uplus_1                 float32
+kepsilonphitf_Uplus_2                 float32
+kepsilonphitf_Uplus_3                 float32
+kepsilonphitf_kplus                   float32
+kepsilonphitf_yplus                   float32
+Case                           string[python]
+Saving dataframe to /home/ryley/WDK/ML/kaggle_update/dataframe/kepsilonphitf.csv
+Finished saving dataframe.
+[dataFoam] Assembling dataframe for cases: ['fp_1000', 'fp_1410', 'fp_2000', 'fp_2540', 'fp_3030', 'fp_3270', 'fp_3630', 'fp_3970', 'fp_4060', 'case_0p5', 'case_0p8', 'case_1p0', 'case_1p2', 'case_1p5', 'h20', 'h26', 'h31', 'h38', 'h42', 'convdiv12600', 'convdiv20580', 'cbfs13700', 'squareDuctAve_Re_1100', 'squareDuctAve_Re_1150', 'squareDuctAve_Re_1250', 'squareDuctAve_Re_1300', 'squareDuctAve_Re_1350', 'squareDuctAve_Re_1400', 'squareDuctAve_Re_1500', 'squareDuctAve_Re_1600', 'squareDuctAve_Re_1800', 'squareDuctAve_Re_2000', 'squareDuctAve_Re_2205', 'squareDuctAve_Re_2400', 'squareDuctAve_Re_2600', 'squareDuctAve_Re_2900', 'squareDuctAve_Re_3200', 'squareDuctAve_Re_3500'], outputting final csv file to /home/ryley/WDK/ML/kaggle_update/dataframe/REF.csv
+    Case: fp_1000
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            Uplus
+            yplus
+    Case: fp_1410
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            Uplus
+            yplus
+    Case: fp_2000
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            Uplus
+            yplus
+    Case: fp_2540
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            Uplus
+            yplus
+    Case: fp_3030
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            Uplus
+            yplus
+    Case: fp_3270
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            Uplus
+            yplus
+    Case: fp_3630
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            Uplus
+            yplus
+    Case: fp_3970
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            Uplus
+            yplus
+    Case: fp_4060
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            Uplus
+            yplus
+    Case: case_0p5
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+    Case: case_0p8
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+    Case: case_1p0
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+    Case: case_1p2
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+    Case: case_1p5
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+    Case: h20
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            gradU not found.
+            divtau
+            divtau not found.
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+    Case: h26
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            gradU not found.
+            divtau
+            divtau not found.
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+    Case: h31
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            gradU not found.
+            divtau
+            divtau not found.
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+    Case: h38
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            gradU not found.
+            divtau
+            divtau not found.
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+    Case: h42
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            gradU not found.
+            divtau
+            divtau not found.
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+    Case: convdiv12600
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            gradU not found.
+            divtau
+            divtau not found.
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+    Case: convdiv20580
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            gradU not found.
+            divtau
+            divtau not found.
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+    Case: cbfs13700
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            gradU not found.
+            divtau
+            divtau not found.
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_1100
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_1150
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_1250
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_1300
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_1350
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_1400
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_1500
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_1600
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_1800
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_2000
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_2205
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_2400
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_2600
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_2900
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_3200
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_3500
+        REF
+            U
+            tau
+            k
+            a
+            b
+            gradU
+            divtau
+            tauplus
+            tauplus not found.
+            Uplus
+            Uplus not found.
+            yplus
+            yplus not found.
+Final dataframe columns:
+Index(['REF_U_1', 'REF_U_2', 'REF_U_3', 'REF_tau_11', 'REF_tau_12',
+       'REF_tau_13', 'REF_tau_22', 'REF_tau_23', 'REF_tau_33', 'REF_k',
+       'REF_a_11', 'REF_a_12', 'REF_a_13', 'REF_a_22', 'REF_a_23', 'REF_a_33',
+       'REF_b_11', 'REF_b_12', 'REF_b_13', 'REF_b_22', 'REF_b_23', 'REF_b_33',
+       'REF_gradU_11', 'REF_gradU_12', 'REF_gradU_13', 'REF_gradU_21',
+       'REF_gradU_22', 'REF_gradU_23', 'REF_gradU_31', 'REF_gradU_32',
+       'REF_gradU_33', 'REF_divtau_1', 'REF_divtau_2', 'REF_divtau_3',
+       'REF_tauplus_11', 'REF_tauplus_12', 'REF_tauplus_13', 'REF_tauplus_21',
+       'REF_tauplus_22', 'REF_tauplus_23', 'REF_tauplus_31', 'REF_tauplus_32',
+       'REF_tauplus_33', 'REF_Uplus_1', 'REF_Uplus_2', 'REF_Uplus_3',
+       'REF_yplus', 'Case'],
+      dtype='object')
+Memory info for final dataframe: 
+Index              7222496
+REF_U_1            3611248
+REF_U_2            3611248
+REF_U_3            3611248
+REF_tau_11         3611248
+REF_tau_12         3611248
+REF_tau_13         3611248
+REF_tau_22         3611248
+REF_tau_23         3611248
+REF_tau_33         3611248
+REF_k              3611248
+REF_a_11           3611248
+REF_a_12           3611248
+REF_a_13           3611248
+REF_a_22           3611248
+REF_a_23           3611248
+REF_a_33           3611248
+REF_b_11           3611248
+REF_b_12           3611248
+REF_b_13           3611248
+REF_b_22           3611248
+REF_b_23           3611248
+REF_b_33           3611248
+REF_gradU_11       3611248
+REF_gradU_12       3611248
+REF_gradU_13       3611248
+REF_gradU_21       3611248
+REF_gradU_22       3611248
+REF_gradU_23       3611248
+REF_gradU_31       3611248
+REF_gradU_32       3611248
+REF_gradU_33       3611248
+REF_divtau_1       3611248
+REF_divtau_2       3611248
+REF_divtau_3       3611248
+REF_tauplus_11     3611248
+REF_tauplus_12     3611248
+REF_tauplus_13     3611248
+REF_tauplus_21     3611248
+REF_tauplus_22     3611248
+REF_tauplus_23     3611248
+REF_tauplus_31     3611248
+REF_tauplus_32     3611248
+REF_tauplus_33     3611248
+REF_Uplus_1        3611248
+REF_Uplus_2        3611248
+REF_Uplus_3        3611248
+REF_yplus          3611248
+Case              59962543
+REF_U_1                  float32
+REF_U_2                  float32
+REF_U_3                  float32
+REF_tau_11               float32
+REF_tau_12               float32
+REF_tau_13               float32
+REF_tau_22               float32
+REF_tau_23               float32
+REF_tau_33               float32
+REF_k                    float32
+REF_a_11                 float32
+REF_a_12                 float32
+REF_a_13                 float32
+REF_a_22                 float32
+REF_a_23                 float32
+REF_a_33                 float32
+REF_b_11                 float32
+REF_b_12                 float32
+REF_b_13                 float32
+REF_b_22                 float32
+REF_b_23                 float32
+REF_b_33                 float32
+REF_gradU_11             float32
+REF_gradU_12             float32
+REF_gradU_13             float32
+REF_gradU_21             float32
+REF_gradU_22             float32
+REF_gradU_23             float32
+REF_gradU_31             float32
+REF_gradU_32             float32
+REF_gradU_33             float32
+REF_divtau_1             float32
+REF_divtau_2             float32
+REF_divtau_3             float32
+REF_tauplus_11           float32
+REF_tauplus_12           float32
+REF_tauplus_13           float32
+REF_tauplus_21           float32
+REF_tauplus_22           float32
+REF_tauplus_23           float32
+REF_tauplus_31           float32
+REF_tauplus_32           float32
+REF_tauplus_33           float32
+REF_Uplus_1              float32
+REF_Uplus_2              float32
+REF_Uplus_3              float32
+REF_yplus                float32
+Case              string[python]
+Saving dataframe to /home/ryley/WDK/ML/kaggle_update/dataframe/REF.csv
+Finished saving dataframe.
+[dataFoam] Assembling dataframe for cases: ['fp_1000', 'fp_1410', 'fp_2000', 'fp_2540', 'fp_3030', 'fp_3270', 'fp_3630', 'fp_3970', 'fp_4060', 'case_0p5', 'case_0p8', 'case_1p0', 'case_1p2', 'case_1p5', 'h20', 'h26', 'h31', 'h38', 'h42', 'convdiv12600', 'convdiv20580', 'cbfs13700', 'squareDuctAve_Re_1100', 'squareDuctAve_Re_1150', 'squareDuctAve_Re_1250', 'squareDuctAve_Re_1300', 'squareDuctAve_Re_1350', 'squareDuctAve_Re_1400', 'squareDuctAve_Re_1500', 'squareDuctAve_Re_1600', 'squareDuctAve_Re_1800', 'squareDuctAve_Re_2000', 'squareDuctAve_Re_2205', 'squareDuctAve_Re_2400', 'squareDuctAve_Re_2600', 'squareDuctAve_Re_2900', 'squareDuctAve_Re_3200', 'squareDuctAve_Re_3500'], outputting final csv file to /home/ryley/WDK/ML/kaggle_update/dataframe/komegasst.csv
+    Case: fp_1000
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            kplus
+            yplus
+    Case: fp_1410
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            kplus
+            yplus
+    Case: fp_2000
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            kplus
+            yplus
+    Case: fp_2540
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            kplus
+            yplus
+    Case: fp_3030
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            kplus
+            yplus
+    Case: fp_3270
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            kplus
+            yplus
+    Case: fp_3630
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            kplus
+            yplus
+    Case: fp_3970
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            kplus
+            yplus
+    Case: fp_4060
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            kplus
+            yplus
+    Case: case_0p5
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: case_0p8
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: case_1p0
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: case_1p2
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: case_1p5
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: h20
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: h26
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: h31
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: h38
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: h42
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: convdiv12600
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: convdiv20580
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: cbfs13700
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_1100
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_1150
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_1250
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_1300
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_1350
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_1400
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_1500
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.
+    Case: squareDuctAve_Re_1600
+        komegasst
+            U
+            k
+            epsilon
+            omega
+            nut
+            p
+            gradU
+            gradk
+            gradepsilon
+            gradomega
+            gradnut
+            gradp
+            turbR
+            divturbR
+            DUDt
+            wallDistance
+            S
+            R
+            skewness
+            C
+            Uplus
+            Uplus not found.
+            kplus
+            kplus not found.
+            yplus
+            yplus not found.

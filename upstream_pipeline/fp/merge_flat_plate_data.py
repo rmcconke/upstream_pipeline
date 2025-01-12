@@ -96,6 +96,9 @@ nasa_Retheta = np.genfromtxt(os.path.join(os.getenv('ML_FLATPLATE_DATA'),'nasa_r
 ax.plot(C_bottom,Re_theta,'b',label=f'{args.case_type}')
 ax.plot(nasa_Retheta[:,0],nasa_Retheta[:,1],'k',label=f'NASA $Re_\theta$')
 
+np.save(os.path.join(RANS_numpy_folder,f'{args.case_type}_x_Retheta_flatplate_RANS.npy'),np.column_stack((C_bottom, Re_theta)))
+np.save(os.path.join(RANS_numpy_folder,f'{args.case_type}_x_Retheta_flatplate_ref.npy'),np.column_stack((nasa_Retheta[:,0],nasa_Retheta[:,1])))
+
 ax.set_xlabel('$x$')
 ax.set_ylabel('$Re_\theta$')
 ax.legend(loc='lower right')
@@ -147,6 +150,9 @@ for Re_theta_i in DNS_Re_theta_list:
     DNS_tau = interpolate(C_fine,DNS_tau,C_coarse,method=interp_method)
     DNS_gradU = interpolate(C_fine,DNS_gradU,C_coarse,method=interp_method)
     DNS_divTau = interpolate(C_fine,DNS_divTau,C_coarse,method=interp_method)
+    DNS_y_plus = interpolate(C_fine,DNS_y_plus,C_coarse,method=interp_method)
+    DNS_U_plus = interpolate(C_fine,DNS_U_plus,C_coarse,method=interp_method)
+    DNS_tau_plus = interpolate(C_fine,DNS_tau_plus,C_coarse,method=interp_method)
 
     # Calculating extra DNS fields
     DNS_k = 0.5*np.trace(DNS_tau,axis1=1,axis2=2)
